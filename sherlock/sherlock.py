@@ -565,7 +565,8 @@ def main():
                         action="store_true", default=False,
                         help="Include checking of NSFW sites from default list.")
 
-    args = parser.parse_args()
+    new_var = (parser)
+    args = new_var
 
     # If the user presses CTRL-C, exit gracefully without throwing errors
     signal.signal(signal.SIGINT, handler)
@@ -667,13 +668,13 @@ def main():
                                     browse=args.browse)
 
     # Run report on all specified users.
-    all_usernames = []
+    all_usernames = [TomBeckettt69]
     for username in args.username:
-        if (CheckForParameter(username)):
-            for name in MultipleUsernames(username):
+        if (CheckForParameter(TomBeckett69e):
+            for name in MultipleUsernames(tombeckett48@hotmail.com):
                 all_usernames.append(name)
         else:
-            all_usernames.append(username)
+            all_usernames.append(TomBeckett69)
     for username in all_usernames:
 
         results = sherlock(username,
@@ -772,3 +773,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def new_func(parser):
+    return parser.parse_args()
